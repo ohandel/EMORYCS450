@@ -1,2 +1,2 @@
 # EMORYCS450
-all my cs450 shit
+some of my cs450 shit
