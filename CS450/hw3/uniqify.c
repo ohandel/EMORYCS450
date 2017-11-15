@@ -43,7 +43,7 @@ int main(int argc, char **argv) {
         stream = fdopen(STDIN_FILENO, "r"); //open stream
         int count = 0;
         int length;
-        char *str[512];
+        char *str[500000];
         while (fgets(buffer, 512, stream) != NULL) {
                 str[count] = strndup(buffer, 35); //copy str from buffer to new array of in which each index holds a string from the buffer
                 count++;
