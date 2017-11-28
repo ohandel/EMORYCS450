@@ -14,7 +14,7 @@ int main(int argc, char * * argv) {
     int pds[2]; //fds for pipe B
     pid_t pid, gid; //process IDS
     FILE * stream;
-    char buffer[1024];
+    char buffer[4096];
     int chars;
     char c;
     pipe(fds); //making pipe A
@@ -47,7 +47,7 @@ int main(int argc, char * * argv) {
         char * strNext;
         printf("Word Conditions: <5 have been discarded, >35 have been truncated, words alphabetized, any special characters removed, word multiplicity recorded\n\n");
         printf("The constructed list of words from the input given: \n\n");
-        while ((str = fgets(buffer, 1024, stream)) != NULL) {
+        while ((str = fgets(buffer,4096,stream)) != NULL) {
             if (multiplicity == 0) {
                 strNext = strdup(str); //copy str from buffer to new array of in which each index holds a string from the buffer
                 multiplicity++;
