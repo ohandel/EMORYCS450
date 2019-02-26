@@ -1,4 +1,5 @@
 # EMORYCS450
 Systems Programming 
 
-Don't copy you'll most likely get caught and fail!
+*Please don't copy!!!*
+I'd rather not get sent to honor council again cuz someone copied my work exactly
